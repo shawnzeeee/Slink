@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-slink-dev-00230-authRole",
+      "UnauthRoleArn": "arn:aws:iam::737281382863:role/amplify-slink-dev-00230-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::737281382863:role/amplify-slink-dev-00230-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-slink-dev-00230-deployment",
+      "UnauthRoleName": "amplify-slink-dev-00230-unauthRole",
+      "StackName": "amplify-slink-dev-00230",
+      "StackId": "arn:aws:cloudformation:us-west-2:737281382863:stack/amplify-slink-dev-00230/529f56d0-d5af-11ec-976d-0ad2fa9b794b",
+      "AmplifyAppId": "d2j3uvajgra742"
+    },
+    "categories": {
+      "auth": {
+        "slinkefef4a56": {}
+      }
+    }
+  }
+}

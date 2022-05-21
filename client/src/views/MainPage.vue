@@ -25,7 +25,7 @@
 
 </template>
 <script>
-
+import {mapMutations} from 'vuex'
 export default {
     data(){
         return{
@@ -33,12 +33,19 @@ export default {
         }
     },
     methods:{
+      ...mapMutations({
+        CLEAR_USER_INFO: 'user/CLEAR_USER_INFO'
+      }),
         goToLogin(){
             this.$router.push({path:'login'})
         },
         goToSignUp(){
             this.$router.push({path:'sign-up'})
-        }
+        },
+    },
+    async mounted(){
+      console.log("mounted");
+      this.CLEAR_USER_INFO();
     }
 }
 </script>

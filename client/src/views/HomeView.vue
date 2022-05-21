@@ -3,7 +3,6 @@
     <v-app-bar color = "rgba(238,144,46,1)" elevation = "0" min-height ="150"  >
       <v-col cols="6">
         <img
-          v-bind="props"
           height="125"
           width="125"
           src = "../assets/slink-logo.png"
@@ -45,21 +44,26 @@
 
 <script>
 // @ is an alias to /src
-
+import{mapMutations} from 'vuex'
 export default {
   name: 'HomeView',
   components: {
 
   },
   methods:{
+    ...mapMutations({
+      CLEAR_USER_INFO: 'user/CLEAR_USER_INFO'
+    }),
     goToHome(){
       this.$router.push({path:'/'})
     },
     goToAboutUs(){
       this.$router.push({path:'/about-us'})
-    }
+    },
+
   }
 }
+
 </script>
 
 <style scoped>
@@ -67,7 +71,7 @@ export default {
   margin-top: 100px;
 
   font-size:100px;
-  color: rgba(238,144,46,1);
+  color: #F7931E;
   
 }
 .logo{
